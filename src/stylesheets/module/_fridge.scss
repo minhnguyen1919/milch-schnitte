@@ -1,18 +1,10 @@
 .fridge {
   width: 100%;
   height: 1007px;
+  padding: 30px 0 0 0;
   background-image: url('../images/background.png');
   background-size: cover;
   background-repeat: no-repeat;
-}
-
-.tabs {
-  width: 100%;
-  height: 900px;
-  margin-top: -400px;
-  background: -webkit-linear-gradient(rgba(255,0,0,0) 0%, rgba(142,207,236,1) 30%, rgba(142,207,236,1) 100%);
-  background: -o-linear-gradient(rgba(255,0,0,0) 0%, rgba(142,207,236,1) 30%, rgba(142,207,236,1) 100%);
-  background: linear-gradient(rgba(255,0,0,0) 0%, rgba(142,207,236,1) 30%, rgba(142,207,236,1) 100%);
 }
 
 .container--fridge {
@@ -23,6 +15,7 @@
 .fridge {
   &-wrapper {
     @extend %float-left, %relative;
+    width: 60%;
   }
 
   &-content {
@@ -41,7 +34,7 @@
 
   &__countdown {
     @extend %absolute, %transform-50;
-    top: 50px;
+    top: 10px;
     left: 50%;
 
     img {
@@ -52,6 +45,34 @@
   &__open-button {
     @extend %absolute;
     top: 470px;
-    right: -10%;
+    right: -50px;
+  }
+}
+
+.headline {
+  &-wrapper {
+    @extend %float-right;
+    width: 40%;
+    margin-top: 35px;
+  }
+
+  &-logo {
+
+  }
+
+  &-slogan {
+    @extend %text-center;
+    color: #00acef;
+    font-size: 24px;
+    margin-top: -20px;
+
+    &--part {
+      margin: 0 0 5px 0;
+    }
+  }
+
+  &-product {
+    margin-top: 135px;
+    margin-left: 150px;
   }
 }

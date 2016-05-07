@@ -17,3 +17,35 @@
 %transform-50 {
   transform: translate(-50%, 50%);
 }
+
+%text-center {
+  text-align: center;
+}
+
+%block {
+  display: block;
+}
+
+%hide {
+  display: none;
+}
+
+%inline {
+  display: inline;
+}
+
+%inline-block {
+  display: inline-block;
+}
+
+%overflow-hidden {
+  overflow: hidden;
+}
+
+%font-bold {
+  font-weight: bold;
+}
+
+%font-italic {
+  font-style: italic;
+}

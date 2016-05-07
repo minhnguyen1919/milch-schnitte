@@ -1,0 +1,130 @@
+.summer-tabs {
+  @extend %relative;
+  width: 100%;
+  height: 1000px;
+  margin-top: -180px;
+
+  &-wrapper {
+    @extend %absolute;
+    width: 100%;
+    height: 1100px;
+    background: -webkit-linear-gradient(rgba(255,0,0,0) 0%, rgba(142,207,236,1) 20%, rgba(142,207,236,1) 100%);
+    background: -o-linear-gradient(rgba(255,0,0,0) 0%, rgba(142,207,236,1) 20%, rgba(142,207,236,1) 100%);
+    background: linear-gradient(rgba(255,0,0,0) 0%, rgba(142,207,236,1) 20%, rgba(142,207,236,1) 100%);
+
+  }
+
+  &-container {
+    @extend %overflow-hidden;
+    width: 960px;
+    background-color: #fff;
+    margin: 30px auto 0;
+    border-radius: 5px;
+  }
+
+  &-menu {
+    height: 60px;
+    width: 100%;
+    float: left;
+    clear: both;
+
+    li {
+      @extend %float-left, %text-center, %block;
+      width: 33.3333%;
+      height: 60px;
+      line-height: 60px;
+
+      &:not(:last-child) {
+        // border-right: 1px solid red;
+      }
+
+      &.active {
+        position: relative;
+        background-color: #03aef0;
+        z-index: 5;
+
+        a {
+          color: #fff;
+        }
+      }
+
+      a {
+        @extend %block, %font-bold, %font-italic;
+        padding: 0;
+        color: #00adf0;
+        font-size: 20px;
+        text-decoration: none;
+      }
+    }
+
+    .active {
+      a {
+        color: #2e7da3;
+      }
+    }
+  }
+
+  .summer-tab {
+    // border: 1px solid #d4d4d1;
+    background-color: #fff;
+    width: auto;
+
+    .content {
+      width: 100%;
+      padding: 20px;
+      display: none;
+    }
+  }
+
+  .gewinnspiel {
+    margin-top: 100px;
+    padding: 40px 100px;
+
+    &__title {
+      @extend %font-bold, %font-italic;
+      font-size: 32px;
+      span {
+        font-size: 26px;
+      }
+    }
+
+    &__desc {
+      color: #00adf0;
+      padding: 0;
+      margin-bottom: 0;
+    }
+  }
+
+  #gewinnspiel {
+   @extend %block;
+  }
+
+  #preise, #meine-lose {
+    @extend %hide;
+  }
+
+  .prizes {
+    @extend %overflow-hidden;
+
+    .prize {
+      @extend %text-center, %float-left;
+      width: 50%;
+
+      &__title,
+      &__content {
+        color: #00adf0;
+      }
+
+      &__title {
+        @extend %font-bold, %font-italic;
+        font-size: 32px;
+      }
+
+      &__content {
+        padding: 0;
+        font-size: 20px;
+      }
+    }
+  }
+}
+
