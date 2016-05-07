@@ -72,12 +72,17 @@ gulp.task('templates', function() {
     .pipe( gulp.dest('dist/') )
 });
 
+gulp.task('style', function() {
+  return gulp.src('./src/stylesheets/**/*.css')
+    .pipe(gulp.dest('./dist/css'))
+})
 
 
-gulp.task('build', ['compass', 'js', 'templates', 'images']);
+gulp.task('build', ['compass', 'js', 'templates', 'images', 'style']);
 
 gulp.task('serve', ['build', 'browser-sync'], function () {
   gulp.watch('src/stylesheets/**/*.{scss,sass}',['compass', reload]);
+  gulp.watch('src/stylesheets/**/*.{css}',['style', reload]);
   gulp.watch('src/scripts/**/*.js',['js', reload]);
   gulp.watch('src/images/**/*',['images', reload]);
   gulp.watch('src/*.jade',['templates', reload]);
