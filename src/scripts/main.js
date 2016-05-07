@@ -1,5 +1,10 @@
-// this is the main file that pulls in all other modules
-// you can require() bower components too!
-var example = require("./example");
-example.welcome();
-var $ = require("jquery");
+$(document).ready(function() {
+  $(".summer-tabs-menu a").click(function(event) {
+    event.preventDefault();
+    $(this).parent().addClass("active");
+    $(this).parent().siblings().removeClass("active");
+    var tab = $(this).attr("href");
+    $(".summer-tab-content").not(tab).css("display", "none");
+    $(tab).fadeIn();
+  });
+});

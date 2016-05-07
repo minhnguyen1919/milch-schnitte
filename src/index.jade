@@ -11,55 +11,15 @@ html.no-js(lang='de')
   head
     meta(charset='UTF-8')
     title Willkommen - Milch-Schnitte
-    meta(property='og:title', content='Milch-Schnitte')
-    meta(property='og:type', content='website')
-    meta(property='og:url', content='http://www.milchschnitte.de/')
-    meta(property='og:image', content='http://www.milchschnitte.de/images/milch-schnitte_fbshare-v2.jpg')
-    meta(property='og:site_name', content='Milch-Schnitte')
-    meta(property='og:description', content='Unkompliziert und frisch aus dem Kühlschrank ist Milch-Schnitte der leckere Snack für die kleine Pause im Alltag.')
-    meta(name='description', content='Milch-Schnitte ist die leckere, kleine Pause im Alltag. Jetzt tolle Rezepte und kreative Spiel- und Bastelideen entdecken.')
-    meta(name='keywords', content='Milch-Schnitte, Milchschnitte, Alltagstypen, Alltagstypentest, Milch-Schnitte-Zutaten, Milch-Schnitte-Wallpaper, Milch-Schnitte-Downloads, Ferrero')
-    meta(name='WT.ti', content='Milch-Schnitte - Start')
-    meta(name='WT.cg_n', content='Milch-Schnitte-start')
-    meta(name='DCS.dcsuri', content='milch-schnitte/willkommen')
-    meta(name='seobility', content='f5521a0917211bc09f4677d4e329430f')
-    meta(name='viewport', content='width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no')
-    script(type='text/javascript').
-      var base = location.protocol + "//" + location.hostname + (location.port && ":" + location.port) + "/";
-      document.getElementsByTagName("base")[0].href = +(location.hostname == '10.172.30.25') ? base + "milchschnitte/" : base;
     link#favicon(rel='shortcut icon', href='/icons/favicon.ico')
-    link(rel='apple-touch-icon', href='/icons/57.png')
-    link(rel='apple-touch-icon', sizes='72x72', href='/icons/72.png')
-    link(rel='apple-touch-icon', sizes='114x114', href='/icons/114.png')
-    //- link(rel='stylesheet', type='text/css', href='/css/bootstrap.css')
-    link(rel='stylesheet', type='text/css', href='/fancybox/source/jquery.fancybox.css', media='screen')
-    link(rel='stylesheet', type='text/css', href='/mediaelement-js/mediaelementplayer.css')
     link(rel='stylesheet', type='text/css', href='/stylesheets/main.css')
-    //- link(rel='stylesheet', type='text/css', href='/stylesheets/new.css')
-    link(rel='stylesheet', type='text/css', href='/css/my-break-contest.css', media='screen')
     script(src='https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js', type='text/javascript')
-    script(type='text/javascript', src='/mediaelement-js/mediaelement-and-player.min.js')
-    script(type='text/javascript', src='/js/picturefill.min.js')
-    script(type='text/javascript', src='/js/jquery.focuspoint.min.js')
-    script(type='text/javascript', src='/js/modernizr.js')
+
   body#bodyTag.home
-    script.
-      dataLayer = [];
-    noscript
-      iframe(src='//www.googletagmanager.com/ns.html?id=GTM-MJVLXS', height='0', width='0', style='display: none; visibility: hidden')
-    script.
-      (function (w, d, s, l, i) { w[l] = w[l] || []; w[l].push({ 'gtm.start': new Date().getTime(), event: 'gtm.js' }); var f = d.getElementsByTagName(s)[0], j = d.createElement(s), dl = l != 'dataLayer' ? '&l=' + l : ''; j.async = true; j.src = '//www.googletagmanager.com/gtm.js?id=' + i + dl; f.parentNode.insertBefore(j, f); })(window, document, 'script', 'dataLayer', 'GTM-MJVLXS');
     #wrapper
       // start header
       include template/header/header.jade
       // end header
-      //- article
-      //-   .container
-      //-   .container.container--main-teaser
-      //-     .row
-      //-       section.box
-
-
       include template/T001.jade
       // push for sticky footer
       #push
@@ -67,21 +27,4 @@ html.no-js(lang='de')
     include template/footer/footer.jade
     #ie-bgr
       img(src='/media/bgr.png')
-    script(src='/js/jquery.flexslider-min.js', type='text/javascript')
-    script(src='/js/responsive-nav.min.js', type='text/javascript')
-    script(src='/fancybox/source/jquery.fancybox.pack.js', type='text/javascript')
-    script(src='/js/blur.min.js', type='text/javascript')
-    script(src='/js/shared.js', type='text/javascript')
-    script(src='/js/myBreakContest.js', type='text/javascript')
-
-    script.
-      $(document).ready(function() {
-        $(".summer-tabs-menu a").click(function(event) {
-          event.preventDefault();
-          $(this).parent().addClass("active");
-          $(this).parent().siblings().removeClass("active");
-          var tab = $(this).attr("href");
-          $(".summer-tab-content").not(tab).css("display", "none");
-          $(tab).fadeIn();
-        });
-      });
+    script(src='/scripts/app.js', type='text/javascript')
