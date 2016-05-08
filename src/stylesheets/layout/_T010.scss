@@ -4,14 +4,24 @@
       @include background-image(url('../images/fridge-opened-background.jpg'));
     }
 
+    .container--fridge {
+      width: 1480px;
+    }
+
     .fridge {
       &-wrapper {
-        width: 70%;
+        width: 905px;
       }
 
       &__ms-logo {
         top: 0px;
         left: 55%;
+      }
+    }
+
+    .headline {
+      &-wrapper {
+        top: 90px;
       }
     }
   }

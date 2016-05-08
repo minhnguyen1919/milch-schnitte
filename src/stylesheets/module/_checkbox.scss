@@ -27,16 +27,18 @@
   /*add custom box*/
   label:before {
     @extend %inline-block, %vertical-middle, %text-center;
-    font-size: 18px;
+    font-size: 24px;
     content: "";
 
-    width: 18px;
-    height: 18px;
-    line-height: 18px;
+    width: 24px;
+    height: 24px;
+    line-height: 24px;
+
+    border: 4px solid $ms-radio-border-color;
 
     margin-right: 5px;
     margin-bottom: 5px;
-    box-shadow: inset 0 0 1px 1px $main-gray;
+    @include box-shadow(inset -4px 4px 11px -4px rgba(156, 223, 249, 1));
   }
 
   .radio,
@@ -50,7 +52,7 @@
 
   /*style for custom box of radio button*/
   .radio label:before {
-    border-radius: 9px;;
+    border-radius: 16px;;
   }
 
   .checkbox label:before {
@@ -61,8 +63,9 @@
   /*add content to radio when checked*/
   input[type=radio]:checked + label:before {
     content: "";
-    background-color: $main-red;
-    box-shadow: inset 0 0 1px 1px $main-red;
+    border-color: $white;
+    background-color: $ms-main-color;
+    @include box-shadow(none);
   }
 
   input[type="radio"]:checked + label {

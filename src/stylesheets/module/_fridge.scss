@@ -1,5 +1,6 @@
 .summer-action {
   .container--fridge {
+    @extend %relative;
     width: 1300px;
     margin: 0 auto;
   }
@@ -81,7 +82,9 @@
   // style for logo, desc, product in right side
   .headline {
     &-wrapper {
-      @extend %float-right;
+      @extend %absolute;
+      top: 0;
+      right: 0;
       width: 40%;
       margin-top: 35px;
     }
