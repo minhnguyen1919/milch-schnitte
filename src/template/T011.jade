@@ -1,11 +1,26 @@
-.radio-wrapper
-  .radio
-    input(type="radio" name="gender" value="male" id="gender--male")
-    label(for="gender--male") Male
-    input(type="radio" name="gender" value="female" id="gender--female")
-    label(for="gender--female") Female
+.summer-action(style="background-color: #ccc")
+  .radio-wrapper
+    .radio
+      input(type="radio" name="gender" value="male" id="gender--male")
+      label(for="gender--male") Male
+      input(type="radio" name="gender" value="female" id="gender--female")
+      label(for="gender--female") Female
 
-.checkbox-wrapper
-  .checkbox
-    input#join-now__term-privacy(type="checkbox" name="termPrivacy" value="agreed")
-    label(for="join-now__term-privacy") I agree
+  .checkbox-wrapper
+    .checkbox
+      input#join-now__term-privacy(type="checkbox" name="termPrivacy" value="agreed")
+      label(for="join-now__term-privacy") I agree
+
+
+  .ms-answer-wrapper
+    .ms-answer
+      .radio-wrapper
+        .radio.radio-answer
+          input(type="radio" name="answer" value="1914" id="1914")
+          label(for="1914") 1914
+        .radio.radio-answer
+          input(type="radio" name="answer" value="1978" id="1978")
+          label(for="1978") 1978
+        .radio.radio-answer
+          input(type="radio" name="answer" value="2000" id="2000")
+          label(for="2000") 2000

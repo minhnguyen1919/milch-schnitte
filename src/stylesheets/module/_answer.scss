@@ -1,0 +1,30 @@
+.ms-answer {
+  @extend %text-left;
+
+  width: 356px;
+  height: 180px;
+
+  @include border-radius(5px);
+
+  background-color: $white;
+
+  margin: 50px auto;
+
+  &-wrapper {
+  }
+
+  .radio-answer {
+    height: 60px;
+    line-height: 60px;
+
+    &:not(:last-child) {
+      border-bottom: 1px solid $ms-answer-border-bottom-color;
+    }
+
+    &.active {
+      background-color: $ms-main-color;
+      @include box-shadow(0px 0px 0px 10px $ms-main-color);
+      border-color: $ms-main-color;
+    }
+  }
+}
