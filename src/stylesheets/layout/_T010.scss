@@ -4,13 +4,13 @@
       @include background-image(url('../images/fridge-opened-background.jpg'));
     }
 
-    .container--fridge {
-      width: 1480px;
-    }
-
     .fridge {
       &-wrapper {
         width: 905px;
+      }
+
+      &-opened {
+        @extend %overflow-hidden;
       }
 
       &__ms-logo {

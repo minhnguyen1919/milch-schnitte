@@ -10,14 +10,11 @@
       width: 100%;
       height: 1100px;
       @include background(linear-gradient(rgba(255,0,0,0) 0%, rgba(142,207,236,1) 20%, rgba(142,207,236,1) 100%));
-
     }
 
     &-container {
       @extend %overflow-hidden;
-      width: 960px;
       background-color: #fff;
-      margin: 30px auto 0;
       @include border-radius(5px);
     }
 

@@ -1,0 +1,21 @@
+.summer-action {
+  width: 100%;
+  font-size: 16px;
+
+  .fridge {
+    &-container {
+      @extend %relative, %overflow-hidden;
+      width: em($base-font-size, 1422);
+      padding: 0 30px;
+      margin: 0 auto;
+    }
+
+    &--opened {
+      .fridge-container {
+        width: em($base-font-size, 1482);
+        padding: 0;
+      }
+    }
+  }
+
+}
