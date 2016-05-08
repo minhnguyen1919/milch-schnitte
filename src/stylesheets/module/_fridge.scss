@@ -1,4 +1,10 @@
 .summer-action {
+  .container--fridge {
+    width: 1300px;
+    margin: 0 auto;
+  }
+
+  // style for fridge
   .fridge {
     width: 100%;
     height: 1007px;
@@ -6,14 +12,7 @@
     @include background-image(url('../images/background.png'));
     background-size: cover;
     background-repeat: no-repeat;
-  }
 
-  .container--fridge {
-    width: 1300px;
-    margin: 0 auto;
-  }
-
-  .fridge {
     &-wrapper {
       @extend %float-left, %relative;
       width: 60%;
@@ -46,10 +45,11 @@
     &__open-button {
       @extend %absolute;
       top: 470px;
-      right: 0px;
+      right: -45px;
     }
   }
 
+  // style for logo, desc, product in right side
   .headline {
     &-wrapper {
       @extend %float-right;

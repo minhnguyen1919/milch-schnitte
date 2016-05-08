@@ -21,6 +21,7 @@
       @include border-radius(5px);
     }
 
+    // style for tab menu
     &-menu {
       @extend %float-left, %no-margin, %no-padding;
       height: 60px;
@@ -60,21 +61,20 @@
       }
     }
 
+
+    // style for tab content
     .summer-tab {
       background-color: #fff;
       width: auto;
 
-      .content {
-        @extend %hide;
-        width: 100%;
-        padding: 20px;
+      &-content {
+        @extend %hide, %text-center;
+        margin-top: 50px;
+        padding: 40px 100px;
       }
     }
 
     .gewinnspiel {
-      @extend %text-center;
-      margin-top: 50px;
-      padding: 40px 100px;
 
       &__title {
         @extend %font-bold, %font-italic;
@@ -94,10 +94,6 @@
 
     #gewinnspiel {
      @extend %block;
-    }
-
-    #preise, #meine-lose {
-      @extend %hide;
     }
 
     .prizes {
