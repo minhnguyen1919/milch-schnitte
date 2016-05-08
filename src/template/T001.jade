@@ -19,38 +19,4 @@
           p.headline-slogan--part unvergesslich machen!
 
         img.headline-product(src="images/product.png", alt="")
-  article.summer-tabs
-    .summer-tabs-wrapper
-      .summer-tabs-container
-        ul.summer-tabs-menu
-          li.active
-            a(href='#gewinnspiel') Gewinnspiel
-          li
-            a(href='#preise') Preise
-          li
-            a(href='#meine-lose') Meine Lose
-        .summer-tab
-          #gewinnspiel.summer-tab-content
-            .gewinnspiel
-              h3.gewinnspiel__title Dies sind deine zwei Gewinnchanchen!
-              p.gewinnspiel__desc Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua.
-              .prizes
-                .prize
-                  img(src="images/current-prize.png", alt="")
-                  h3.prize__title
-                    span 1.
-                    |  Tagespreis
-                  p.prize__content Beantworte jeden Tag die Tagesfrage und sichere dir deine Chance auf den Tagespreis
-                .prize
-                  img(src="images/grand-prize.png", alt="")
-                  h3.prize__title
-                    span 2.
-                    |  Hauptpreis
-                  p.prize__content Mit jeder richtig beantworteten Frage sammelst du Lose für den Hauptpreis, der am Ende unseres Sommer-Countdowns verlosen wird.
-              .join-now-btn
-                a.btn(href="/T011.html") Jetzt mitmachen
-
-          #preise.summer-tab-content
-            p Donecs viverra.
-          #meine-lose.summer-tab-content
-            p Duis egestas
+  include tabs.jade
