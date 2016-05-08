@@ -1,8 +1,7 @@
-.btn {
+a.btn {
   @extend %inline-block, %font-bold, %font-italic, %text-center;
   width: auto;
-  height: 45px;
-  background-color: #e6391b;
+  background-color: $ms-button-bg-color;
   color: #fff;
   font-size: 18px;
   vertical-align: middle;

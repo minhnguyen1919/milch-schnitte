@@ -1,0 +1,30 @@
+doctype html
+//if lt IE 7
+  html.no-js.ie6(lang='de')
+//if IE 7
+  html.no-js.ie7(lang='de')
+//if IE 8
+  html.no-js.ie8(lang='de')
+// [if gt IE 8] <!
+html.no-js(lang='de')
+  // <![endif]
+  head
+    meta(charset='UTF-8')
+    title Willkommen - Milch-Schnitte
+    link#favicon(rel='shortcut icon', href='/icons/favicon.ico')
+    link(rel='stylesheet', type='text/css', href='/stylesheets/main.css')
+    script(src='https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js', type='text/javascript')
+
+  body#bodyTag.home
+    #wrapper
+      // start header
+      include template/header/header.jade
+      // end header
+      //- include template/T001.jade
+      // push for sticky footer
+      #push
+    // sticky footer
+    include template/footer/footer.jade
+    #ie-bgr
+      img(src='/media/bgr.png')
+    script(src='/scripts/app.js', type='text/javascript')

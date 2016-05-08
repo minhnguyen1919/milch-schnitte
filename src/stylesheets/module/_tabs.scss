@@ -86,7 +86,6 @@
       }
 
       &__desc {
-        // color: #00adf0;
         padding: 0;
         margin-bottom: 0;
       }
@@ -105,11 +104,10 @@
 
         &__title,
         &__content {
-          // color: #00adf0;
         }
 
         &__title {
-          // @extend %font-bold, %font-italic;
+          @extend %font-bold, %font-italic;
           font-size: 32px;
           margin-bottom: 10px;
 
