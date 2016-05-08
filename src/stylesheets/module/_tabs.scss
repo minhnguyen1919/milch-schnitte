@@ -1,128 +1,137 @@
-.summer-tabs {
-  @extend %relative;
-  width: 100%;
-  height: 1000px;
-  margin-top: -180px;
-
-  &-wrapper {
-    @extend %absolute;
+.summer-action {
+  .summer-tabs {
+    @extend %relative;
     width: 100%;
-    height: 1100px;
-    @include background(linear-gradient(rgba(255,0,0,0) 0%, rgba(142,207,236,1) 20%, rgba(142,207,236,1) 100%));
+    height: 1000px;
+    margin-top: -180px;
 
-  }
+    &-wrapper {
+      @extend %absolute;
+      width: 100%;
+      height: 1100px;
+      @include background(linear-gradient(rgba(255,0,0,0) 0%, rgba(142,207,236,1) 20%, rgba(142,207,236,1) 100%));
 
-  &-container {
-    @extend %overflow-hidden;
-    width: 960px;
-    background-color: #fff;
-    margin: 30px auto 0;
-    @include border-radius(5px);
-  }
+    }
 
-  &-menu {
-    @extend %float-left;
-    height: 60px;
-    width: 100%;
-    clear: both;
+    &-container {
+      @extend %overflow-hidden;
+      width: 960px;
+      background-color: #fff;
+      margin: 30px auto 0;
+      @include border-radius(5px);
+    }
 
-    li {
-      @extend %float-left, %text-center, %block, %relative, %overflow-hidden;
-      width: 33.3333%;
+    &-menu {
+      @extend %float-left, %no-margin, %no-padding;
       height: 60px;
-      line-height: 60px;
-      @include background(linear-gradient(bottom left, rgba(0,0,0,0.2) 0%, rgba(0,0,0,0) 50%));
+      width: 100%;
+      clear: both;
 
-      &.active {
-        @extend %relative;
-        background-color: #03aef0;
-        z-index: 5;
+      li {
+        @extend %float-left, %text-center, %block, %relative, %overflow-hidden;
+        width: 33.3333%;
+        height: 60px;
+        line-height: 60px;
+        @include background(linear-gradient(bottom left, rgba(0,0,0,0.2) 0%, rgba(0,0,0,0) 50%));
+
+        &.active {
+          @extend %relative;
+          background-color: #03aef0;
+          z-index: 5;
+
+          a {
+            color: #fff;
+          }
+        }
 
         a {
-          color: #fff;
+          @extend %block, %font-bold, %font-italic;
+          padding: 0;
+          // color: #00adf0;
+          font-size: 20px;
+          text-decoration: none;
         }
       }
 
-      a {
-        @extend %block, %font-bold, %font-italic;
-        padding: 0;
-        color: #00adf0;
-        font-size: 20px;
-        text-decoration: none;
+      .active {
+        a {
+          color: #2e7da3;
+        }
       }
     }
 
-    .active {
-      a {
-        color: #2e7da3;
-      }
-    }
-  }
+    .summer-tab {
+      background-color: #fff;
+      width: auto;
 
-  .summer-tab {
-    background-color: #fff;
-    width: auto;
-
-    .content {
-      @extend %hide;
-      width: 100%;
-      padding: 20px;
-    }
-  }
-
-  .gewinnspiel {
-    margin-top: 100px;
-    padding: 40px 100px;
-
-    &__title {
-      @extend %font-bold, %font-italic;
-      font-size: 32px;
-      span {
-        font-size: 26px;
+      .content {
+        @extend %hide;
+        width: 100%;
+        padding: 20px;
       }
     }
 
-    &__desc {
-      color: #00adf0;
-      padding: 0;
-      margin-bottom: 0;
-    }
-  }
-
-  #gewinnspiel {
-   @extend %block;
-  }
-
-  #preise, #meine-lose {
-    @extend %hide;
-  }
-
-  .prizes {
-    @extend %overflow-hidden;
-
-    .prize {
-      @extend %text-center, %float-left;
-      width: 50%;
-
-      &__title,
-      &__content {
-        color: #00adf0;
-      }
+    .gewinnspiel {
+      @extend %text-center;
+      margin-top: 50px;
+      padding: 40px 100px;
 
       &__title {
         @extend %font-bold, %font-italic;
+        margin-bottom: 35px;
         font-size: 32px;
+        span {
+          font-size: 26px;
+        }
       }
 
-      &__content {
-        padding: 0 25px;
-        font-size: 20px;
+      &__desc {
+        // color: #00adf0;
+        padding: 0;
+        margin-bottom: 0;
       }
+    }
+
+    #gewinnspiel {
+     @extend %block;
+    }
+
+    #preise, #meine-lose {
+      @extend %hide;
+    }
+
+    .prizes {
+      @extend %overflow-hidden;
+
+      .prize {
+        @extend %text-center, %float-left;
+        width: 50%;
+
+        &__title,
+        &__content {
+          // color: #00adf0;
+        }
+
+        &__title {
+          // @extend %font-bold, %font-italic;
+          font-size: 32px;
+          margin-bottom: 10px;
+
+          span {
+            font-size: 26px;
+          }
+        }
+
+        &__content {
+          padding: 0 25px;
+          font-size: 20px;
+        }
+      }
+    }
+
+    .join-now-btn {
+      margin-top: 30px;
     }
   }
 
-  .join-now-btn {
-    margin-top: 20px;
-  }
 }
-

@@ -1,8 +1,13 @@
-@import "compass/css3";
+@import 'compass/css3';
+
+@import 'base/bootstrap',
+        'base/layout';
+
 @import 'helper/variables',
         'helper/all',
-        'base/bootstrap',
-        'base/layout',
+        'base/reset',
         'module/fridge',
         'module/tabs',
         'module/button';
+
+

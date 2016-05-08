@@ -429,3 +429,17 @@
   @extend %no-pointer-events, %cursor-default;
   @include opacity(.5);
 }
+
+.ms-bold {
+  @extend %font-bold;
+}
+
+.ms-italic {
+  @extend %font-italic;
+}
+
+.text {
+  &--default {
+    color: #00adf0;
+  }
+}

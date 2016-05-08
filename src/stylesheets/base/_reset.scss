@@ -1,0 +1,29 @@
+.summer-action {
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6,
+  p {
+    @extend %no-margin, %no-padding;
+    font-weight: normal;
+    font-size: 100%;
+    color: $ms-main-color;
+  }
+
+  a {
+    @extend %no-text-decoration;
+    color: $ms-main-color;
+
+    &,
+    &:hover,
+    &:focus,
+    &:active,
+    &:active:focus,
+    a:visited {
+      outline: 0 !important;
+      outline-style: none;
+    }
+  }
+}
