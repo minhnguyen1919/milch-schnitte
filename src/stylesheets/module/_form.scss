@@ -1,0 +1,48 @@
+.input {
+  &__group {
+    @extend %text-left;
+    font-size: 16px;
+
+    &.disabled {
+      @extend %no-pointer-events;
+      opacity: 0.5;
+    }
+  }
+
+  &__name {
+    margin-bottom: 3px;
+  }
+
+  &__value {
+    margin-bottom: 15px;
+    width: 100%;
+  }
+}
+
+.form-control {
+  @extend %block;
+  width: 100%;
+  padding: 16px 10px;
+  font-size: 16px;
+  background-color: $ms-checkbox-bg-color;
+  background-image: none;
+  border: none;
+  @include border-radius(4px);
+  @include box-shadow(inset -2px 3px 1px rgba(0, 0, 0, 0.2));
+
+  &::-webkit-input-placeholder {
+     color: $ms-input-placeholder-color;
+  }
+
+  &:-moz-placeholder { /* Firefox 18- */
+     color: $ms-input-placeholder-color;
+  }
+
+  &::-moz-placeholder {  /* Firefox 19+ */
+     color: $ms-input-placeholder-color;
+  }
+
+  &:-ms-input-placeholder {
+     color: $ms-input-placeholder-color;
+  }
+}
