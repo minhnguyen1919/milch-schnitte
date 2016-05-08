@@ -1,0 +1,18 @@
+.summer-action {
+  .fridge--opened {
+    &.fridge {
+      @include background-image(url('../images/fridge-opened-background.jpg'));
+    }
+
+    .fridge {
+      &-wrapper {
+        width: 70%;
+      }
+
+      &__ms-logo {
+        top: 0px;
+        left: 55%;
+      }
+    }
+  }
+}

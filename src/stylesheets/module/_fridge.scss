@@ -18,8 +18,18 @@
       width: 60%;
     }
 
-    &-content {
+    &-content,
+    &__ms-logo,
+    &__countdown,
+    &__open-button,
+    &__daily-price-logo,
+    &__award-phone,
+    &__award-group,
+    &__question-btn {
       @extend %absolute;
+    }
+
+    &-content {
       width: 100%;
       height: 100%;
       top: 0;
@@ -27,13 +37,13 @@
     }
 
     &__ms-logo {
-      @extend %absolute, %transform-50;
+      @extend %transform-50;
       top: 50px;
       left: 50%;
     }
 
     &__countdown {
-      @extend %absolute, %transform-50;
+      @extend %transform-50;
       top: 10px;
       left: 50%;
 
@@ -42,8 +52,27 @@
       }
     }
 
+    &__daily-price-logo {
+      top: 268px;
+      left: 165px;
+    }
+
+    &__award-phone {
+      top: 175px;
+      right: 110px;
+    }
+
+    &__award-group {
+      top: 510px;
+      left: 173px;
+    }
+
+    &__question-btn {
+      top: 420px;
+      left: 260px;
+    }
+
     &__open-button {
-      @extend %absolute;
       top: 470px;
       right: -45px;
     }

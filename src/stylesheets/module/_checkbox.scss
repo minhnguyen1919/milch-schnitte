@@ -1,0 +1,77 @@
+.checkbox-wrapper {
+
+  &--block {
+    label {
+      @extend %block;
+      margin-top: 10px;
+      margin-bottom: 10px;
+    }
+  }
+
+  /*style for label*/
+  label {
+    @extend %inline-block, %cursor-pointer, %relative;
+    padding-left: 0px;
+  }
+
+  label:not(:last-child) {
+    margin-right: 30px;
+  }
+
+  /*hide default box*/
+  input[type=radio],
+  input[type=checkbox]{
+    opacity: 0;
+  }
+
+  /*add custom box*/
+  label:before {
+    @extend %inline-block, %vertical-middle, %text-center;
+    font-size: 18px;
+    content: "";
+
+    width: 18px;
+    height: 18px;
+    line-height: 18px;
+
+    margin-right: 5px;
+    margin-bottom: 5px;
+    box-shadow: inset 0 0 1px 1px $main-gray;
+  }
+
+  .radio,
+  .checkbox {
+    margin: 5px 0;
+
+    input:focus + label:before {
+      box-shadow: 0 0 1px 1px $main-gray;
+    }
+  }
+
+  /*style for custom box of radio button*/
+  .radio label:before {
+    border-radius: 9px;;
+  }
+
+  .checkbox label:before {
+    @extend %float-left;
+    border-radius: 3px;
+  }
+
+  /*add content to radio when checked*/
+  input[type=radio]:checked + label:before {
+    content: "";
+    background-color: $main-red;
+    box-shadow: inset 0 0 1px 1px $main-red;
+  }
+
+  input[type="radio"]:checked + label {
+    @extend %no-pointer-events;
+  }
+
+  input[type=checkbox]:checked + label:before {
+    content: "\2713";
+    color: $main-green;
+  }
+
+}
