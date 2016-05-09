@@ -25,4 +25,9 @@ $(document).ready(function() {
   $('#ms-question__close').click(function () {
     $('#answer-question-form').hide();
   })
+
+  $('#ms-login__reg-btn').click(function () {
+    $('.ms-login').hide();
+    $('.ms-reg').show();
+  })
 });

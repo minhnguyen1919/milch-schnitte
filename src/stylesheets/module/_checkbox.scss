@@ -26,6 +26,10 @@
 
   // custom ui for radio button
   .radio-wrapper {
+    label {
+      width: 330px;
+    }
+
     label:before {
       @extend %inline-block, %vertical-middle, %text-center;
       font-size: 24px;
