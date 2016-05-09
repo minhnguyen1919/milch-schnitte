@@ -25,14 +25,32 @@
       &-wrapper {
         @extend %float-left, %relative;
         width: 60%;
-        width: em($base-font-size, 703);
-        height: em($base-font-size, 1182);
+        @include img-size($base-font-size, 703, 1182);
+      }
+    }
+
+    &-opened {
+      @include background-image(url('../images/fridge-opened.png'));
+      background-repeat: no-repeat;
+      background-size: em($base-font-size, 905, 1137);
+
+      width: 100%;
+      height: 100%;
+
+      &-wrapper {
+        @extend %float-left, %relative;
+        width: 60%;
+        @include img-size($base-font-size, 905, 1137);
+      }
+
+      &__content {
+        width: em($base-font-size, 812);
+        margin-left: em($base-font-size, 85);
       }
     }
 
     &__ms-logo {
-      width: em($base-font-size, 165);
-      height: em($base-font-size, 83);
+      @include img-size($base-font-size, 165, 83);
       margin-top: em($base-font-size, 50);
     }
 
@@ -40,8 +58,7 @@
       margin-top: em($base-font-size, 5);
 
       &__table {
-        width: em($base-font-size, 494);
-        height: em($base-font-size, 344);
+        @include img-size($base-font-size, 494, 344);
       }
     }
 
@@ -50,9 +67,48 @@
 
       &__button {
         @extend %float-right;
-        width: em($base-font-size, 602);
-        height: em($base-font-size, 172);
+        @include img-size($base-font-size, 602, 172);
         margin-right: em($base-font-size, -85);
+      }
+    }
+
+    // fridge stage 1 start----------------------------------
+    &__stage-1 {
+      &-wrapper {
+        margin-top: em($base-font-size, 60);
+      }
+    }
+
+    &__daily-price {
+
+      &-wrapper {
+        @extend %float-left;
+        width: em($base-font-size, 450);
+      }
+
+      &-logo {
+        padding: em($base-font-size, 85, 0, 0, 90);
+        @include img-size($base-font-size, 354, 110);
+      }
+    }
+
+    &__question-btn {
+      @extend %float-right;
+      width: em($base-font-size, 360);
+      padding-top: em($base-font-size, 50);
+    }
+
+    &__award-phone {
+      @include img-size($base-font-size, 243, 294);
+      margin-left: em($base-font-size, -90);
+    }
+    // fridge stage 1 end-----------------------------------
+
+    &__award-group {
+      @include img-size($base-font-size, 624, 321);
+
+      &-wrapper {
+        margin-top: em($base-font-size, 33);
       }
     }
 

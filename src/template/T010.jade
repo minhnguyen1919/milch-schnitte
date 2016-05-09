@@ -1,15 +1,20 @@
 article.fridge.fridge--opened
   .fridge-container
     .fridge-wrapper
-      .fridge-opend-wrapper
-        img(src="images/fridge-opened.png", alt="fridge")
-        div.fridge-content
-          img.fridge__ms-logo(src="images/fridge-ms-logo-opened.png", alt="milch schnitte logo")
-          img.fridge__daily-price-logo(src="images/daily-prize-logo.png", alt="daily price logo")
-          img.fridge__award-phone(src="images/award-headphone.png", alt="award phone")
-          img.fridge__award-group(src="images/award-group.png", alt="award group")
-          .fridge__question-btn
-            a.btn(href="/T011.html") Frage beantworten
+      .fridge-opened-wrapper
+        //- img(src="images/fridge-opened.png", alt="fridge")
+        div.fridge-opened
+          .fridge-opened__content
+            .fridge__ms-logo-wrapper
+              img.fridge__ms-logo(src="images/fridge-ms-logo-opened.png", alt="milch schnitte logo")
+            .fridge__stage-1-wrapper
+              .fridge__daily-price-wrapper
+                img.fridge__daily-price-logo(src="images/daily-prize-logo.png", alt="daily price logo")
+                .fridge__question-btn
+                  a.btn(href="/T011.html") Frage beantworten
+              img.fridge__award-phone(src="images/award-headphone.png", alt="award phone")
+            .fridge__award-group-wrapper
+              img.fridge__award-group(src="images/award-group.png", alt="award group")
 
     div.headline-wrapper
       img.headline-logo(src="images/headline-logo.png", alt="")

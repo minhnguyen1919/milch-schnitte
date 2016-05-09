@@ -23,6 +23,11 @@ $image-path: 'assets/images/';
   @return $em-values;
 }
 
+@mixin img-size($base-fs, $width, $height) {
+  width: em($base-fs, $width);
+  height: em($base-fs, $height);
+}
+
 /* Mixin for font face */
 @mixin font-face($font-name) {
   @font-face {
