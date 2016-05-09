@@ -10,10 +10,12 @@ article.fridge.fridge--opened
               .fridge__daily-price-wrapper
                 img.fridge__daily-price-logo(src="images/daily-prize-logo.png", alt="daily price logo")
                 .fridge__question-btn
-                  a.btn(href="/T011.html") Frage beantworten
+                  a#answer-question.btn(href="javascript:void(0)") Frage beantworten
               img.fridge__award-phone(src="images/award-headphone.png", alt="award phone")
             .fridge__award-group-wrapper
               img.fridge__award-group(src="images/award-group.png", alt="award group")
+          #answer-question-form.answer-question-form
+            include question-form.jade
 
     .headline-wrapper
       img.headline-logo(src="images/headline-logo.png", alt="")

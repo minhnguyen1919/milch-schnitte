@@ -17,4 +17,12 @@ $(document).ready(function() {
     $(this).parent().addClass('active');
     $(this).parent().siblings().removeClass('active');
   })
+
+  $('#answer-question').click(function () {
+    $('#answer-question-form').show();
+  })
+
+  $('#ms-question__close').click(function () {
+    $('#answer-question-form').hide();
+  })
 });

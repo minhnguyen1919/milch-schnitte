@@ -1,0 +1,44 @@
+.summer-action {
+
+  .ms {
+    &-question {
+      @extend %relative;
+      padding: 15px 65px 96px;
+
+      &-wrapper {
+        width: 672px;
+        background-color: $ms-question-form-bg-color;
+        @include border-radius(5px);
+      }
+
+      &__close {
+        @extend %absolute;
+        top: 15px;
+        right: 15px;
+      }
+
+      &__heading,
+      &__content {
+        @extend %block;
+      }
+
+      &__heading {
+        font-size: 18px;
+      }
+
+      &__content {
+        @extend %font-bold, %font-italic;
+        font-size: 24px;
+        margin-top: 80px;
+      }
+
+      &__submit {
+        .btn {
+          padding-left: 40px;
+          padding-right: 40px;
+        }
+      }
+    }
+
+  }
+}

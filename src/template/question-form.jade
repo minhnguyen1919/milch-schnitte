@@ -1,0 +1,21 @@
+.ms-question-wrapper
+  form.ms-question
+    p.ms-question__heading Heutige Gewinnspielfrage
+    a#ms-question__close.ms-question__close
+      i.icon.icon__close
+    p.ms-question__content Seit welchem Jahr sorgt die Milch-Schnitte® für kühle Erfrischung im Sommer?
+    .ms-answer-wrapper
+      .ms-answer
+        .radio-wrapper
+          .radio.radio-answer
+            input(type="radio" name="answer" value="1914" id="1914")
+            label(for="1914") 1914
+          .radio.radio-answer
+            input(type="radio" name="answer" value="1978" id="1978")
+            label(for="1978") 1978
+          .radio.radio-answer
+            input(type="radio" name="answer" value="2000" id="2000")
+            label(for="2000") 2000
+
+    .ms-question__submit
+      button.btn(type="submit" href="/T011.html") Antwort senden

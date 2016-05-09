@@ -1,0 +1,11 @@
+.summer-action {
+  .icon {
+    @extend %inline-block;
+
+    &__close {
+      width: 19px;
+      height: 19px;
+      @include background-image(url("../images/icon-close.png"));
+    }
+  }
+}

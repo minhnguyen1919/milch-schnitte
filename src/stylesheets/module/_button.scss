@@ -1,4 +1,5 @@
-a.btn {
+a.btn,
+button.btn {
   @extend %inline-block, %font-bold, %font-italic, %text-center;
   width: auto;
   background-color: $ms-button-bg-color;

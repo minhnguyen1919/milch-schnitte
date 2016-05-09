@@ -9,7 +9,7 @@
     height: 32px;
     line-height: 32px;
 
-    margin-right: 5px;
+    margin-right: 20px;
     margin-bottom: 5px;
 
     background-color: $ms-checkbox-bg-color;
@@ -30,7 +30,7 @@
 
     border: 4px solid $ms-radio-border-color;
 
-    margin-right: 5px;
+    margin-right: 20px;
     margin-bottom: 5px;
     @include box-shadow(inset -4px 4px 11px -4px rgba(156, 223, 249, 1));
   }
@@ -51,6 +51,8 @@
   label {
     @extend %inline-block, %cursor-pointer, %relative;
     padding-left: 0px;
+    font-size: 22px;
+    width: 330px;
   }
 
   label:not(:last-child) {
@@ -92,6 +94,7 @@
 
   input[type="radio"]:checked + label {
     @extend %no-pointer-events;
+    color: $white;
   }
 
   input[type=checkbox]:checked + label:before {
