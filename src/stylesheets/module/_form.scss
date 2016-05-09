@@ -7,6 +7,7 @@
       @extend %no-pointer-events;
       opacity: 0.5;
     }
+
   }
 
   &__name {
@@ -15,7 +16,7 @@
 
   &__value {
     margin-bottom: 20px;
-    width: 100%;
+    // width: 100%;
   }
 }
 

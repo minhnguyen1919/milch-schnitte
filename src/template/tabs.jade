@@ -47,4 +47,59 @@ article.summer-tabs
                   button.btn(type="submit") Einloggen & teilnehmen
               p.ms-login__reg-title Neu dabei? Hier geht´s zur Registrierung.
               a.ms-login__reg-link(href="") Registrieren
+            .ms-reg
+              h3.summer-tab-content__title Registrieren
+              p.summer-tab-content__desc Bitte gib deine persönlichen Daten lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.
+              form.ms-reg__form
+                .ms-reg__info
+                  .row
+                    .input__group.col-md-6
+                      .input__value.col-odd
+                        input.form-control(type="text" placeholder="Vorname")
+                    .input__group.col-md-6
+                      .input__value.col-even
+                        input.form-control(type="text" placeholder="Nachname")
+                  .row
+                    .input__group.col-md-6
+                      .input__value.col-odd
+                        input.form-control(type="text" placeholder="Geburtsdatum")
+                    .input__group.col-md-6
+                      .input__value.col-even
+                        input.form-control(type="text" placeholder="Email-Adresse")
+                  .row
+                    .input__group.col-md-6
+                      .row.col-odd
+                        .col-md-9
+                          .input__value.col-odd
+                            input.form-control(type="text" placeholder="Strasse")
+                        .col-md-3
+                          .input__value
+                            input.form-control(type="text" placeholder="Nr.")
+                    .input__group.col-md-6
+                      .row.col-even
+                        .col-md-3
+                          .input__value.col-odd
+                            input.form-control(type="text" placeholder="PLZ")
+                        .col-md-9
+                          .input__value
+                            input.form-control(type="text" placeholder="Ort")
 
+                p.ms-reg__agree Hiermit akzeptiere ich die Teilnahmebedingungen und Datenschutzbestimmungen der Ferrero Deutschland GmbH. Indem ich unten die Schaltfläche „Absenden“ anklicke, erkläre ich meine Teilnahme an der Aktion.
+
+                .row
+                  .col-md-6
+                    .checkbox-wrapper.ms-reg__option-1.col-odd
+                      .checkbox
+                        input#ms-reg__option-1(type="checkbox" name="option-1" value="")
+                        label(for="ms-reg__option-1") Ich möchte von der Ferrero Deutschland GmbH („Ferrero“) auf mich zugeschnittene Informationen und Angebote erhalten und gestatte Ferrero hierfür, meine Teilnahme an Aktionen und die Nutzung von Ferrero-Onlinediensten (Webseiten, Apps, Newsletter, etc.) zu erfassen und auszuwerten, auch unter Einbeziehung von Daten, die Ferrero von Dritten bekommt, z.B. von Marktforschungsinstituten. Details zu Ihrer Einwilligung finden Sie hier.
+
+                  .col-md-6
+                    .col-even
+                      .checkbox-wrapper.ms-reg__option-2
+                        .checkbox
+                          input#ms-reg__option-2(type="checkbox" name="option-2" value="")
+                          label(for="ms-reg__option-2") Ferrero darf mich zu diesem Zweck per elektronischer Post (insb. E-Mail) kontaktieren.
+                      p.ms-reg__option-3 Ich kann meine Einwilligungen jederzeit widerrufen, z.B. unter www.ferrero.de/kontakt.
+
+                      .ms-reg__btn
+                        button.btn(type="submit") Registrieren & Teilnehmen
