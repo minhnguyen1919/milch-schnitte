@@ -69,25 +69,23 @@
         @extend %hide, %text-center;
         margin-top: 50px;
         padding: 40px 100px;
-      }
-    }
 
-    .gewinnspiel {
+        &__title {
+          @extend %font-bold, %font-italic;
+          margin-bottom: 35px;
+          font-size: 32px;
+          span {
+            font-size: 26px;
+          }
+        }
 
-      &__title {
-        @extend %font-bold, %font-italic;
-        margin-bottom: 35px;
-        font-size: 32px;
-        span {
-          font-size: 26px;
+        &__desc {
+          padding: 0;
+          margin-bottom: 0;
         }
       }
-
-      &__desc {
-        padding: 0;
-        margin-bottom: 0;
-      }
     }
+
 
     #gewinnspiel {
      @extend %block;

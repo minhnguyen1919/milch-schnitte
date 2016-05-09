@@ -14,7 +14,7 @@
   }
 
   &__value {
-    margin-bottom: 15px;
+    margin-bottom: 20px;
     width: 100%;
   }
 }
@@ -22,7 +22,7 @@
 .form-control {
   @extend %block;
   width: 100%;
-  padding: 11px 10px;
+  padding: 11px 0px;
   font-size: 16px;
   background-color: $ms-checkbox-bg-color;
   background-image: none;
@@ -32,17 +32,21 @@
 
   &::-webkit-input-placeholder {
      color: $ms-input-placeholder-color;
+     padding: 0 10px;
   }
 
   &:-moz-placeholder { /* Firefox 18- */
      color: $ms-input-placeholder-color;
+     padding: 0 10px;
   }
 
   &::-moz-placeholder {  /* Firefox 19+ */
      color: $ms-input-placeholder-color;
+     padding: 0 10px;
   }
 
   &:-ms-input-placeholder {
      color: $ms-input-placeholder-color;
+     padding: 0 10px;
   }
 }

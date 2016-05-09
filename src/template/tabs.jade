@@ -11,8 +11,8 @@ article.summer-tabs
       .summer-tab
         #gewinnspiel.summer-tab-content
           .gewinnspiel
-            h3.gewinnspiel__title Dies sind deine zwei Gewinnchanchen!
-            p.gewinnspiel__desc Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua.
+            h3.summer-tab-content__title Dies sind deine zwei Gewinnchanchen!
+            p.summer-tab-content__desc Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua.
             .prizes.row
               .prize.col-md-6.col-sm-6
                 img(src="images/current-prize.png", alt="")
@@ -32,4 +32,19 @@ article.summer-tabs
         #preise.summer-tab-content
           p Donecs viverra.
         #meine-lose.summer-tab-content
-          p Duis egestas
+          .ms-lots
+            .ms-login
+              h3.summer-tab-content__title Anmelden oder Registrieren
+              p.summer-tab-content__desc Um an der Tages- und Hauptverlosung teilnehmen zu können musst du dich anmelden bzw. registrieren.
+              form.ms-login__form
+                .input__group
+                  .input__value
+                    input.form-control(type="text" placeholder="E-Mail-Adresse")
+                  .input__value
+                    input.form-control(type="text" placeholder="Passwort")
+                a.ms-login__forgot-pw(href="") Passwort vergessen?
+                .ms-login__btn
+                  button.btn(type="submit") Einloggen & teilnehmen
+              p.ms-login__reg-title Neu dabei? Hier geht´s zur Registrierung.
+              a.ms-login__reg-link(href="") Registrieren
+
