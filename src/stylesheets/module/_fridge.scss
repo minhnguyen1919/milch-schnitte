@@ -9,7 +9,7 @@
     background-repeat: no-repeat;
 
     &-wrapper {
-      @extend %overflow-hidden;
+      @extend %overflow-hidden, %float-left;
       padding-top: em($base-font-size, 30);
     }
 
@@ -24,7 +24,6 @@
 
       &-wrapper {
         @extend %float-left, %relative;
-        width: 60%;
         @include img-size($base-font-size, 703, 1182);
       }
     }
@@ -39,7 +38,6 @@
 
       &-wrapper {
         @extend %float-left, %relative;
-        width: 60%;
         @include img-size($base-font-size, 905, 1137);
       }
 
@@ -117,31 +115,29 @@
   // style for logo, desc, product in right side
   .headline {
     &-wrapper {
-      @extend %absolute;
-      top: 0;
-      right: 0;
-      width: 40%;
-      margin-top: 35px;
+      @extend %float-right;
+      width: em($base-font-size, 600);
     }
 
     &-logo {
-
+      @include img-size($base-font-size, 624, 410);
     }
 
     &-slogan {
       @extend %text-center;
       color: #00acef;
-      font-size: 24px;
-      margin-top: -20px;
+      font-size: em($base-font-size, 24);
+      margin-top: em(24, -30);
 
       &--part {
-        margin: 0 0 5px 0;
+        margin-bottom: em(24, 5);
       }
     }
 
     &-product {
-      margin-top: 40px;
-      margin-left: 150px;
+      @include img-size($base-font-size, 426, 301);
+      margin-top: em($base-font-size, 130);
+      margin-left: em($base-font-size, 190);
     }
   }
 }

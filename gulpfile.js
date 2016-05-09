@@ -64,7 +64,7 @@ gulp.task('images', function() {
 })
 
 gulp.task('templates', function() {
-  return gulp.src('src/*.jade')
+  return gulp.src('src/**/*.jade')
     .pipe($.plumber())
     .pipe($.jade({
       pretty: true

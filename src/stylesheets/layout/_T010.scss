@@ -20,7 +20,8 @@
 
     .headline {
       &-wrapper {
-        top: 90px;
+        margin-left: em($base-font-size, -50);
+        margin-top: em($base-font-size, 135);
       }
     }
   }
