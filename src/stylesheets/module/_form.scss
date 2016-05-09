@@ -36,21 +36,17 @@
 
   &::-webkit-input-placeholder {
      color: $ms-input-placeholder-color;
-     // padding: 0 10px;
   }
 
   &:-moz-placeholder { /* Firefox 18- */
      color: $ms-input-placeholder-color;
-     // padding: 0 10px;
   }
 
   &::-moz-placeholder {  /* Firefox 19+ */
      color: $ms-input-placeholder-color;
-     // padding: 0 10px;
   }
 
   &:-ms-input-placeholder {
      color: $ms-input-placeholder-color;
-     // padding: 0 10px;
   }
 }

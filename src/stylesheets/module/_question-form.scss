@@ -2,11 +2,11 @@
 
   .ms {
     &-question {
-      @extend %relative;
-      padding: 15px 65px 96px;
 
       &-wrapper {
-        width: 672px;
+        @extend %relative;
+        padding: 15px 65px 96px;
+        width: 542px;
         background-color: $ms-question-form-bg-color;
         @include border-radius(5px);
       }
@@ -37,6 +37,39 @@
           padding-left: 40px;
           padding-right: 40px;
         }
+      }
+    }
+
+    &-result {
+      @extend %hide;
+
+      &__icon {
+
+      }
+
+      &__text {
+        font-size: 18px;
+      }
+
+      &__desc {
+        @extend %font-bold, %font-italic;
+        font-size: 24px;
+        margin-top: 10px;
+      }
+
+      &__point {
+        &-icon {
+
+        }
+
+        &-desc {
+          font-size: 24px;
+        }
+      }
+
+      &__prices-desc {
+        font-size: 18px;
+        margin-top: 10px;
       }
     }
 

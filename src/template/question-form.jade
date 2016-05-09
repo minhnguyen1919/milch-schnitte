@@ -1,8 +1,8 @@
 .ms-question-wrapper
+  a#ms-question__close.ms-question__close
+    i.icon.icon__close
   form.ms-question
     p.ms-question__heading Heutige Gewinnspielfrage
-    a#ms-question__close.ms-question__close
-      i.icon.icon__close
     p.ms-question__content Seit welchem Jahr sorgt die Milch-Schnitte® für kühle Erfrischung im Sommer?
     .ms-answer-wrapper
       .ms-answer
@@ -19,3 +19,23 @@
 
     .ms-question__submit
       button.btn(type="submit" href="/T011.html") Antwort senden
+
+  .ms-result.ms-result-correct
+    img.ms-result__icon(src="images/correct-answer.png", alt="")
+    p.ms-result__text Super! Richtige Antwort.
+    p.ms-result__desc Unsere Milch-Schnitte® sorgt seit 1978 für kühle Erfrischung aus dem Kühlschrank. Und das als erster ihrer Art!
+    img.ms-result__point-icon(src="images/one-point.png", alt="")
+    p.ms-result__point-desc Frisch! Du hast 1 Los für den Hauptpreis erhalten.
+    p.ms-result__prices-desc
+      | Du nimmst jetzt automatisch an der Verlosung für den heutigen Tagespreis, einem
+      b  Phillips Kopfhörer
+      |, teil. Komm`morgen wieder und nutze die Chance auf weitere tolle Preise für den Sommer!
+
+  .ms-result.ms-result-wrong
+    img.ms-result__icon(src="images/wrong-answer.png", alt="")
+    p.ms-result__text Das war leider falsch.
+    p.ms-result__desc Unsere Milch-Schnitte® sorgt seit 1978 für kühle Erfrischung aus dem Kühlschrank. Und das als erster ihrer Art!
+    img.ms-result__point-icon(src="images/no-point.png", alt="")
+    p.ms-result__point-desc Leider hast du heute kein Los für den Hauptpreis gewonnen.
+    p.ms-result__prices-desc
+      | Komm`morgen wieder und nutze die Chance auf weitere tolle Preise für den Sommer!
