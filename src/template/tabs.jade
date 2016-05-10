@@ -9,7 +9,7 @@ article.summer-tabs
         li
           a(href='#meine-lose') Meine Lose
       .summer-tab
-        #gewinnspiel.summer-tab-content
+        #gewinnspiel.summer-tab-content.gewinnspiel-wrapper
           .gewinnspiel
             h3.summer-tab-content__title Dies sind deine zwei Gewinnchanchen!
             p.summer-tab-content__desc Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua.
@@ -32,8 +32,8 @@ article.summer-tabs
         #preise.summer-tab-content
           p Donecs viverra.
         #meine-lose.summer-tab-content
-          .ms-lots
-            .ms-login
+          .ms-account
+            .ms-login(style="display:none;")
               h3.summer-tab-content__title Anmelden oder Registrieren
               p.summer-tab-content__desc Um an der Tages- und Hauptverlosung teilnehmen zu können musst du dich anmelden bzw. registrieren.
               form.ms-login__form
@@ -103,3 +103,17 @@ article.summer-tabs
 
                       .ms-reg__btn
                         button.btn(type="submit") Registrieren & Teilnehmen
+            .ms-lots
+              img.ms-lots__logo(src="images/headline-logo-sm.png", alt="headline logo")
+              h3.summer-tab-content__title Meine Lose
+              .ms-lots__point
+                img.ms-lots__point-image(src="images/x-point.png", alt="point image")
+                .ms-lots__point-number 17
+              p.ms-lots__point-total Du hast bereits 17 Lose!
+              .ms-lots__more
+                p.ms-lots__more-text Mit jedem Los steigt deine Chance auf unseren sommerlichen Hauptpreis!
+                p.ms-lots__more-text Spiel jeden Tag mit und erhöhe deine Chance.
+              .ms-lots__share
+                a.btn(href="") Jetzt teilen
+              .ms-lots__logout
+                a.btn(href="") Logout

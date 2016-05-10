@@ -46,7 +46,6 @@
         a {
           @extend %block, %font-bold, %font-italic;
           padding: 0;
-          // color: #00adf0;
           font-size: 20px;
           text-decoration: none;
         }
@@ -58,7 +57,6 @@
         }
       }
     }
-
 
     // style for tab content
     .summer-tab {
@@ -87,11 +85,16 @@
       }
     }
 
+    //---------------------.gewinnspiel start-----------------
+    // show default tab
+    .gewinnspiel {
 
-    #gewinnspiel {
-     @extend %block;
+      &-wrapper {
+        @extend %block;
+      }
     }
 
+    // module in .gewinnspiel tab
     .prizes {
       @extend %overflow-hidden;
 
@@ -122,6 +125,68 @@
 
     .join-now-btn {
       margin-top: 30px;
+    }
+    //---------------------.gewinnspiel end-----------------
+
+    .ms-lots {
+      @extend %relative;
+
+      .summer-tab-content__title {
+        margin-bottom: 10px;
+      }
+
+      &__logo {
+        @extend %absolute;
+        top: 0;
+        left: -60px;
+      }
+
+      &__point {
+        @extend %relative;
+        width: 219px;
+        height: 209px;
+        margin: 0 auto;
+
+        &-image {
+
+        }
+
+        &-number {
+          @extend %absolute, %font-bold, %font-italic;
+          top: 95px;
+          left: 89px;
+          font-size: 32px;
+          color: $white;
+          @include transform(rotate(-4deg));
+        }
+
+        &-total {
+          font-size: 26px;
+          margin-top: 20px;
+          margin-bottom: 10px;
+        }
+      }
+
+      &__more {
+        &-text {
+          font-size: 20px;
+          margin-bottom: 10px;
+        }
+      }
+
+      &__share {
+        margin-top: 30px;
+
+        .btn {
+          background-color: #2ac6f1;
+        }
+      }
+
+      &__logout {
+        @extend %absolute;
+        bottom: 0px;
+        right: -65px;
+      }
     }
   }
 
